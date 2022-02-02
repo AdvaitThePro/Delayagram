@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -13,9 +13,9 @@
     <style>
         * { font-family: 'Rubik', sans-serif; }
     </style>
-    {% block head %}<title>Delayagram</title>{% endblock %}
-  </head>
-  <body>
+    {% block head %}<title>About Us - Delayagram</title>{% endblock %}
+</head>
+<body>
 		{% block body %}
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class="active">
@@ -42,17 +42,30 @@
         </ul>
 
         <div class="footer">
-        	<p>
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-			</p>
+ 
         </div>
     	</nav>
 
-        <!-- Page Content  -->
+   
+
+    <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5">
+              <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button> 
         <h2 class="mb-4">Delayagram</h2>
         <p>Welcome to a literal rip-off of Instagram!</p>
-        <p>Check out some posts!</p>
+        <h2>About The Person</h2>
+        <p>Call me AdvaitThePro and I am the person behind Delayagram (Pls don't sue me Meta)
+            This app was built completely on <a href="https://replit.com">Repl.it</a>, an online coding platform. This is the best i can do!
+            Tell me if you know how I can improve in the comment section of the Repl.it app!
+            Signing off,
+            AdvaitThePro
+        </p>
+        <h2>Credits</h2>
+        <p>For Website Icon: <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Creartive - Flaticon</a>
+        <p>For sidebar theme: <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a></p> </p>
       </div>
 		</div>
 
@@ -60,6 +73,6 @@
     <script src="{{ url_for('static', filename='./js/popper.js') }}"></script>
     <script src="{{ url_for('static', filename='./js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='./js/main.js') }}"></script>
-    {% endblock %}
-  </body>
+        {% endblock %}
+</body>
 </html>

@@ -14,13 +14,17 @@ def profile():
 def search():
     return "<h1>Seach Page</h1>"
 
+@app.route("/new")
+def new():
+    return "<h1>New Post Page</h1>"
+
 @app.route("/follow")
 def follow():
     return "<h1>Follow Page</h1>"
 
 @app.route("/about")
 def about():
-    return "<h1>About Page</h1>"
+    return render_template("about.html")
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port="5000")
